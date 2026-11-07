@@ -1,0 +1,29 @@
+name: update-skills
+on:
+  schedule:
+    - cron: "0 0 * * 1" # 매주 월요일 09:00 KST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: develop
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npx -y skills update -p -y
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: chore/update-skills
+          base: develop
+          title: "chore: update external skills"
+          commit-message: "chore: update external skills"
+          body: |
+            `npx skills update -p -y` 결과입니다. 머지 전에 상류 변경 내용을 diff로 검토하세요.

@@ -1,0 +1,16 @@
+{
+  "enabledPlugins": {
+    "claude-md-management@claude-plugins-official": true,
+    "ponytail@ponytail": true,
+    "superpowers@claude-plugins-official": true
+  },
+  "extraKnownMarketplaces": {
+    "ponytail": {
+      "source": { "source": "git", "url": "https://github.com/DietrichGebert/ponytail.git" }
+    }
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "sh \"$CLAUDE_PROJECT_DIR/.claude/statusline.sh\""
+  }
+}
