@@ -93,7 +93,7 @@ jq -r '.plugins|to_entries[]|.key as $k|.value[]|"\($k) \(.version) \(.gitCommit
 | 워크플로 | 시점 | 동작 |
 |---|---|---|
 | `validate.yml` | push(main, develop), PR | `scripts/validate.py` 실행 |
-| `update-skills.yml` | 매주 월요일 + 수동 | `npx skills update -p -y` 후 변경이 있으면 `chore/update-skills` PR 생성 |
+| `update-skills.yml` | 매주 토요일 06:00 KST + 수동 | `npx skills update -p -y` 후 변경이 있으면 `chore/update-skills` PR 생성 |
 
 `validate.py`가 검사하는 것: 스킬 frontmatter(`name`이 디렉터리명과 일치, `description` 존재 및 1024자 이하), `.claude/skills` symlink의 존재와 유효성, JSON 파일 형식, `skills-lock.json`과 디렉터리 일치, SonarQube 토큰 유출.
 로컬에서는 `uv run --with pyyaml scripts/validate.py`로 실행한다.
