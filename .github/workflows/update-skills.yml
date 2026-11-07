@@ -22,6 +22,12 @@ jobs:
       # ~/.claude를 만들어 Claude Code를 감지시키면 .agents/skills + .claude/skills symlink에만 설치된다.
       - run: mkdir -p ~/.claude
       - run: npx -y skills update -p -y
+      # lock 해시는 설치 경로(로컬 clone / CI)에 따라 값이 달라 파일 변화 없이도 바뀐다.
+      # 스킬 파일이 그대로면 lock만 바뀐 것이므로 되돌려 PR이 생기지 않게 한다.
+      - run: |
+          if git diff --quiet -- . ':!skills-lock.json' && [ -z "$(git ls-files -o --exclude-standard)" ]; then
+            git checkout -- skills-lock.json
+          fi
       - uses: peter-evans/create-pull-request@v7
         with:
           branch: chore/update-skills
