@@ -5,31 +5,36 @@
       "source": "vercel-labs/skills",
       "sourceType": "github",
       "skillPath": "skills/find-skills/SKILL.md",
-      "computedHash": "7bc223e2aafbdbf6e50ea243ba6ef67fe432bb069ab439fea0390795dac0bf7f"
+      "computedHash": "7bc223e2aafbdbf6e50ea243ba6ef67fe432bb069ab439fea0390795dac0bf7f",
+      "commit": "57217cf86ba38148a57af9e90d14a4c049558330"
     },
     "frontend-slides": {
       "source": "zarazhangrui/frontend-slides",
       "sourceType": "github",
       "skillPath": "SKILL.md",
-      "computedHash": "1c6781287ffc504332ec81a61bc7766d2fcee8d2c99d76a463e53bba4c55b840"
+      "computedHash": "1c6781287ffc504332ec81a61bc7766d2fcee8d2c99d76a463e53bba4c55b840",
+      "commit": "9906a34d640d2111f724544cbc50f7f130569ae1"
     },
     "orca-cli": {
       "source": "stablyai/orca",
       "sourceType": "github",
       "skillPath": "skills/orca-cli/SKILL.md",
-      "computedHash": "aaf3ac336796b3d73563fe03f40ab159c4f5c0b04aabbd34306023fa72b8442b"
+      "computedHash": "0ac62f8c6c46d3709400e78688324b692b71d9740fe320caa8fd2fa018ef07ce",
+      "commit": "d64745b33fe4189e8d0442d8a0b41e8173229d94"
     },
     "orca-computer-use": {
       "source": "stablyai/orca",
       "sourceType": "github",
       "skillPath": "skills/orca-computer-use/SKILL.md",
-      "computedHash": "8d29df5bcdb7125a6b2ff1dd529f90417322beb0cb5018163f59d345c3c9dfe9"
+      "computedHash": "8d29df5bcdb7125a6b2ff1dd529f90417322beb0cb5018163f59d345c3c9dfe9",
+      "commit": "d64745b33fe4189e8d0442d8a0b41e8173229d94"
     },
     "orchestration": {
       "source": "stablyai/orca",
       "sourceType": "github",
       "skillPath": "skills/orchestration/SKILL.md",
-      "computedHash": "af0cfcff5ac4d46e93d54884ab70a92890e629dc60bdb8203690431add191c02"
+      "computedHash": "e36cdd7d88c889d43d2257390051a0d1ded6a3e3a513d4de571fe9dfb90b2555",
+      "commit": "d64745b33fe4189e8d0442d8a0b41e8173229d94"
     }
   }
 }
